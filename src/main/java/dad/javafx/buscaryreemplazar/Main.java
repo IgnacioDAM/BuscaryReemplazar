@@ -1,9 +1,9 @@
-package dad.template.javafx;
+package dad.javafx.buscaryreemplazar;
 
 public class Main {
 
 	public static void main(String[] args) {
-		TemplateApp.main(args);
+		BuscaryReemplazar.main(args);
 	}
 
 }
