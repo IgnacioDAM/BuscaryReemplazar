@@ -57,11 +57,13 @@ public class BuscaryReemplazar extends Application {
 		root.addRow(1, new Label("Reemplazar con: "), reemplazarText);
 		root.addRow(2, espacio, new VBox(5, mayusminus, expresionreg, buscaratras, resaltarresultados));
 		
+		VBox zonaizquierda = new VBox(5, root);
+		
 		BorderPane dadroot = new BorderPane();
 		dadroot.setRight(botones);
-		dadroot.setTop(root);
+		dadroot.setCenter(zonaizquierda);
 		
-		Scene scene = new Scene(root, 640, 480);
+		Scene scene = new Scene(dadroot, 640, 480);
 
 		primaryStage.setTitle("Buscar y reemplazar");
 		primaryStage.setScene(scene);
