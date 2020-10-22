@@ -12,6 +12,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.ColumnConstraints;
 import javafx.scene.layout.GridPane;
+import javafx.scene.layout.Priority;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
@@ -71,7 +72,6 @@ public class BuscaryReemplazar extends Application {
 
 		// restricciones columna 0
 		columnas[0].setHalignment(HPos.LEFT);
-		columnas[0].setFillWidth(true);
 
 		// restricciones columna 1
 		columnas[1].setHalignment(HPos.LEFT);
@@ -96,6 +96,7 @@ public class BuscaryReemplazar extends Application {
 
 		// restricciones columna 1
 		cols[1].setHalignment(HPos.CENTER);
+		cols[1].setHgrow(Priority.ALWAYS);
 		cols[1].setFillWidth(true);
 
 		BorderPane dadroot = new BorderPane();
